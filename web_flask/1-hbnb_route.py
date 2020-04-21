@@ -14,7 +14,7 @@ def hello():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hello():
+def hello_HBNB():
     """runs application on host 0.0.0.0 port 5000"""
     return 'HBNB'
 
