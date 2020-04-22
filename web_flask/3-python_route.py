@@ -29,7 +29,7 @@ def C_text(text):
 
 
 @app.route('/python/', strict_slashes=False)
-@app.route('/python/<text>', strict_slashes=False)
+@app.route('/python/(<text>)', strict_slashes=False)
 def Python_text(text='is cool'):
     """runs application on host 0.0.0.0 port 5000  and returns python is cool
     if text is None otherwise return python + text"""
