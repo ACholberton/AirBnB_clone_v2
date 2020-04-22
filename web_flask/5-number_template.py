@@ -47,6 +47,7 @@ def number(n):
     else:
         pass
 
+
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     """runs application on host 0.0.0.0 port 5000  and display an html page
