@@ -32,7 +32,10 @@ def C_text(text):
 @app.route('/python/(<text>)', strict_slashes=False)
 def Python_text(text='is cool'):
     """runs application on host 0.0.0.0 port 5000  and returns python + text"""
-    return 'python {}'.format(text.replace("_", " "))
+    if text is None:
+        return 'Python is cool'
+    else:
+        return 'python {}'.format(text.replace("_", " "))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
