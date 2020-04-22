@@ -23,7 +23,7 @@ def hello_HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def C_text():
+def C_text(text):
         """runs application on host 0.0.0.0 port 5000  and returns c + text"""
         return 'C {}'.format(text.replace("_", " "))
 
