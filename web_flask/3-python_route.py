@@ -36,7 +36,7 @@ def Python_text(text=None):
     if text is None:
         return 'Python is cool'
     else:
-        return 'python {}'.format(text.replace("_", " "))
+        return 'Python {}'.format(text.replace("_", " "))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
